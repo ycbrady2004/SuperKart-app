@@ -4,6 +4,9 @@ import numpy as np
 import joblib  # For loading the serialized model
 import pandas as pd  # For data manipulation
 from flask import Flask, request, jsonify  # For creating the Flask API
+import streamlit as st  # For creating the Streamlit web app
+
+# Create a Flask app
 
 # Initialize Flask app with a name
 superkart_api = Flask("SuperKart")
