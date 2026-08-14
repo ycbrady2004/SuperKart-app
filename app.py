@@ -6,8 +6,6 @@ import pandas as pd  # For data manipulation
 from flask import Flask, request, jsonify  # For creating the Flask API
 import streamlit as st  # For creating the Streamlit web app
 
-# Create a Flask app
-
 # Initialize Flask app with a name
 superkart_api = Flask("SuperKart")
 
@@ -65,6 +63,10 @@ def predict_sales_batch():
 
     return output_dict
 
+# Create a Prediction button
+if st.button("Predict")
+    prediction = predict_sales()
+    st.write("Predicted Sales:", prediction)
 
 # Run the Flask app in debug mode
 if __name__ == '__main__':
